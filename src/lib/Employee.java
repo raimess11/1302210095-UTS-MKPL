@@ -31,13 +31,6 @@ public class Employee {
 		childIdNumbers = new LinkedList<String>();
 	}
 
-	/**
-	 * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya
-	 * (grade 1: 3.000.000 per bulan, grade 2: 5.000.000 per bulan, grade 3:
-	 * 7.000.000 per bulan)
-	 * Jika pegawai adalah warga negara asing gaji bulanan diperbesar sebanyak 50%
-	 */
-
 	public void setMonthlySalary(int grade) {
 		monthlySalary = 3000000 + (2000000 * grade);
 		if (isForeigner) {
